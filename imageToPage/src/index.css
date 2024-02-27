@@ -1,0 +1,146 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background: linear-gradient(to bottom, white, #eee184dc);
+}
+
+.header img {
+  max-width: 450px;
+  margin-inline: auto;
+  display: flex;
+  justify-content: center;
+}
+.hero-section {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  gap: 20px;
+}
+.hero-section .left-part {
+  width: 30%;
+  height: 100%;
+}
+.hero-section .right-part {
+  width: 70%;
+  height: 100%;
+  padding: 10px;
+}
+.right-part ul {
+  padding: 12px;
+  padding-left: 25px;
+  font-weight: 600;
+  color: #000000be;
+}
+.hero-section .trophy,
+.award {
+  height: 100%;
+  width: 100%;
+}
+.hero-section .bolder {
+  font-weight: 700;
+}
+.main-section {
+  border-bottom: 2px solid red;
+  margin: 28px;
+}
+.main-section .heading {
+  font-weight: 600;
+  font-size: 14px;
+}
+.main-section .img_box {
+  width: 80%;
+  margin-inline: auto;
+  text-align: center;
+  margin-block: 5px;
+}
+.img_box p {
+  font-weight: 700;
+  padding: 15px;
+}
+.img_box img {
+  width: 100%;
+}
+
+.feature {
+  text-align: center;
+  margin: 25px;
+}
+.feature h3 {
+  padding-bottom: 13px;
+}
+.feature .pipe {
+  color: red;
+  font-size: 23px;
+  padding-inline: 3px;
+  font-weight: bolder;
+}
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  background: #e34848;
+  height: 80px;
+  margin: 5px;
+  color: white;
+}
+.footer div {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+.footer .icon {
+  width: 30px;
+  height: 30px;
+}
+
+@media (max-width: 380px) {
+  .header img {
+    width: 100%;
+  }
+  .hero-section {
+    flex-wrap: wrap;
+  }
+  .hero-section .left-part {
+    width: 90%;
+    height: 360px;
+  }
+  .hero-section .right-part {
+    width: 100%;
+  }
+  .main-section .img_box {
+    width: 100%;
+  }
+  .main-section .img_box p {
+    font-size: 10px;
+  }
+  .feature div {
+    font-size: 12px;
+    text-align: justify;
+  }
+  .footer {
+    height: auto;
+    padding: 10px;
+    gap: 10px;
+  }
+}
+@media (max-width: 768px) {
+  .hero-section {
+    flex-wrap: wrap;
+  }
+  .hero-section .left-part {
+    width: 90%;
+  }
+  .hero-section .right-part {
+    width: 100%;
+  }
+  .main-section .img_box {
+    width: 100%;
+  }
+}
